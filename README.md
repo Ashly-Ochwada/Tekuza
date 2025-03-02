@@ -1,54 +1,84 @@
-<div align="center">
-  
-  ![GitHub repo size](https://img.shields.io/github/repo-size/codewithsadee/desinic)
-  ![GitHub stars](https://img.shields.io/github/stars/codewithsadee/desinic?style=social)
-  ![GitHub forks](https://img.shields.io/github/forks/codewithsadee/desinic?style=social)
-[![Twitter Follow](https://img.shields.io/twitter/follow/codewithsadee_?style=social)](https://twitter.com/intent/follow?screen_name=codewithsadee_)
-  [![YouTube Video Views](https://img.shields.io/youtube/views/SjhiZ_ySGzA?style=social)](https://youtu.be/SjhiZ_ySGzA)
+# Tekuza
 
-  <br />
-  <br />
+**Tekuza** is a software development company specializing in:
+- **Backend Development**
+- **Android App Development**
+- **Web & Frontend Development**
+- **Data Analysis & Machine Learning**
+- **GIS Development**
+- **UI/UX Design & UX Research**
 
-  <h2 align="center">Desinic - Agency website</h2>
+## 🚀 About Tekuza
+Tekuza is committed to delivering high-quality, scalable, and innovative technology solutions. Whether you're building a web application, mobile app, or AI-powered system, we provide end-to-end development services tailored to your needs.
 
-  Desinic is fully responsive agency website, <br />Responsive for all devices, built using HTML, CSS, and JavaScript.
+## 📌 Features
+- Modern tech stack for backend, frontend, and mobile applications.
+- Cloud-integrated solutions with AWS, Google Cloud, and DigitalOcean.
+- User-friendly interfaces with strong UX principles.
+- GIS-powered applications for spatial data analysis.
+- AI & ML models for data-driven insights.
 
-  <a href="https://codewithsadee.github.io/desinic/"><strong>➥ Live Demo</strong></a>
+## 🏗 Tech Stack
+| Domain          | Technologies Used |
+|---------------|-----------------|
+| Backend      | Django, RestAPI, Node.js |
+| Frontend     | React, Next.js, TailwindCSS |
+| Mobile       | Kotlin, Jetpack Compose |
+| Database     | PostgreSQL, Firebase, Supabase |
+| DevOps       | Docker, Kubernetes, CI/CD (GitHub Actions) |
+| Cloud        | AWS, Google Cloud, DigitalOcean |
+| AI/ML        | TensorFlow, PyTorch, Scikit-learn |
+| GIS          | Google Earth Engine, QGIS, PostGIS |
 
-</div>
-
-<br />
-
-### Demo Screeshots
-
-![Desinic Desktop Demo](./readme-images/desktop.png "Desktop Demo")
-
-### Prerequisites
-
-Before you begin, ensure you have met the following requirements:
-
-* [Git](https://git-scm.com/downloads "Download Git") must be installed on your operating system.
-
-### Run Locally
-
-To run **Desinic** locally, run this command on your git bash:
-
-Linux and macOS:
-
-```bash
-sudo git clone https://github.com/codewithsadee/desinic.git
+## 📂 Project Structure
+```
+📦 Tekuza
+ ┣ 📂 backend        # Backend services (APIs, Database)
+ ┣ 📂 frontend       # Web UI components
+ ┣ 📂 mobile        # Android app development
+ ┣ 📂 devops        # Deployment & automation
+ ┣ 📂 ml            # Machine Learning models
+ ┣ 📂 gis           # GIS and mapping services
+ ┣ 📜 README.md     # Project documentation
 ```
 
-Windows:
-
-```bash
-git clone https://github.com/codewithsadee/desinic.git
+## 🔧 Setup & Installation
+### 1️⃣ Clone the Repository
+```sh
+# git clone https://github.com/your-username/tekuza.git
+cd tekuza
 ```
+### 2️⃣ Backend Setup
+```sh
+cd backend
+pip install -r requirements.txt
+python manage.py migrate
+python manage.py runserver
+```
+### 3️⃣ Frontend Setup
+```sh
+cd frontend
+npm install
+npm run dev
+```
+### 4️⃣ Mobile Setup
+- Open `mobile/` in Android Studio and run the project.
 
-### Contact
+## 📖 Documentation
+For detailed guides and API documentation, check the `docs/` folder or visit our [Wiki](#) (Add your wiki link here).
 
-If you want to contact with me you can reach me at [Twitter](https://www.twitter.com/codewithsadee).
+## 🤝 Contributing
+We welcome contributions! If you'd like to help improve Tekuza:
+1. Fork the repository.
+2. Create a feature branch (`git checkout -b feature-branch`).
+3. Commit your changes (`git commit -m 'Add new feature'`).
+4. Push to your branch (`git push origin feature-branch`).
+5. Create a Pull Request.
 
-### License
+## 📜 License
+Tekuza is licensed under the MIT License. See [LICENSE](LICENSE) for details.
 
-This project is **free to use** and does not contains any license.
+## 📩 Contact
+📧 Email: tekuzasolutions@gmail.com 
+<!-- 🌐 Website: [tekuza.com](#)  
+🐦 Twitter: [@tekuza_dev](#)   -->
