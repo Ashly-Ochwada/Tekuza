@@ -6,76 +6,117 @@
     <title>Appointment Form</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f9fa;
         }
-        .form-container {
-            width: 50%;
+        
+        .appointment-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 5rem 2rem;
+        }
+        
+        .appointment-content {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+            max-width: 1100px;
             margin: auto;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 10px;
+            gap: 3rem;
         }
-        .form-group {
-            margin-bottom: 15px;
+        
+        .appointment-form-container {
+            flex: 1;
+            max-width: 500px;
+            padding: 2rem;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
         }
-        label {
-            font-weight: bold;
-            display: block;
+        
+        .appointment-form-container h2 {
+            margin-bottom: 1rem;
+            font-size: 24px;
+            text-align: center;
         }
-        input, select, textarea {
+        
+        .appointment-form-container input,
+        .appointment-form-container select,
+        .appointment-form-container textarea {
             width: 100%;
-            padding: 8px;
-            margin-top: 5px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 18px;
+            outline: none;
         }
-        button {
-            background-color: #4CAF50;
+        
+        .appointment-form-container textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+        
+        .appointment-form-container button {
+            background-image: linear-gradient(45deg, #ff4b2b, #ff416c);
+            background-size: 200%;
             color: white;
-            padding: 10px 15px;
+            padding: 12px 35px;
+            font-size: var(--fs-8);
+            font-weight: var(--fw-500);
+            border-radius: 0 25px;
             border: none;
-            border-radius: 5px;
             cursor: pointer;
+            transition: 0.3s ease-in-out;
         }
-        button:hover {
-            background-color: #45a049;
+        
+        .appointment-form-container button:hover {
+            background: linear-gradient(45deg, #ff416c, #ff4b2b);
         }
     </style>
 </head>
 <body>
-    <div class="form-container">
-        <h2>Appointment Form</h2>
-        <form>
-            <div class="form-group">
-                <label for="date-time">Select a date and time</label>
-                <input type="datetime-local" id="date-time" name="date-time" required>
+    <section class="appointment-section">
+        <div class="appointment-content">
+            <div class="appointment-form-container">
+                <h2>Appointment Form</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="date-time">Select a date and time</label>
+                        <input type="datetime-local" id="date-time" name="date-time" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="service">Which service or services are you interested in?</label>
+                        <select id="service" name="service">
+                            <option value="consultation">Consultation</option>
+                            <option value="meeting">Meeting</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4"></textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
             </div>
-            <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email address</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="phone">Phone number</label>
-                <input type="tel" id="phone" name="phone" required>
-            </div>
-            <div class="form-group">
-                <label for="service">Which service or services are you interested in?</label>
-                <select id="service" name="service">
-                    <option value="consultation">Consultation</option>
-                    <option value="meeting">Meeting</option>
-                    <option value="other">Other</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="4"></textarea>
-            </div>
-            <button type="submit" class="btn">Submit</button>
-        </form>
-    </div>
+        </div>
+    </section>
 </body>
 </html>
