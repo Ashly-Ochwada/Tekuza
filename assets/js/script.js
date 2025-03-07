@@ -1,11 +1,8 @@
 'use strict';
 
-
-
 /**
- * navbar toggle
+ * Navbar toggle
  */
-
 const navOpenBtn = document.querySelector("[data-nav-open-btn]");
 const navbar = document.querySelector("[data-navbar]");
 const navCloseBtn = document.querySelector("[data-nav-close-btn]");
@@ -21,27 +18,26 @@ for (let i = 0; i < elemArr.length; i++) {
 }
 
 /**
- * toggle navbar & overlay when click any navbar-link
+ * Toggle navbar & overlay when clicking any navbar-link
  */
-
 const navbarLinks = document.querySelectorAll("[data-navbar-link]");
 
 for (let i = 0; i < navbarLinks.length; i++) {
   navbarLinks[i].addEventListener("click", function () {
     navbar.classList.toggle("active");
     overlay.classList.toggle("active");
+
+    // Remove "active" class from all links
+    navbarLinks.forEach(link => link.classList.remove("active"));
+
+    // Add "active" class to the clicked link
+    this.classList.add("active");
   });
 }
 
-
-
-
-
 /**
- * header & go-top-btn active
- * when window scroll down to 400px
+ * Header & go-top-btn active when window scrolls down to 400px
  */
-
 const header = document.querySelector("[data-header]");
 const goTopBtn = document.querySelector("[data-go-top]");
 
